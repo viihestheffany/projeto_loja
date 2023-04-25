@@ -2,7 +2,7 @@ let modeloJson = [
     {
       id: 1,
       name: 'Camiseta com estampa de dragão',
-      img: 'img/camiseta1.jpg',
+      img: 'img/camiseta1.jpg.png',
       price: 20.19,
       sizes: ['malha', 'algodão', 'dry'],
       description: 'Blusa Básica Manga Curta',
@@ -10,7 +10,7 @@ let modeloJson = [
     {
       id: 2,
       name: 'Camiseta EZwear Gráfico ocasional ',
-      img: 'img/camiseta2.jpg',
+      img: 'img/camiseta2.jpg.png',
       price: 18.0,
       sizes: ['algodão', 'malha', 'dry'],
       description: 'Blusa Básica Manga Curta',
@@ -18,7 +18,7 @@ let modeloJson = [
     {
       id: 3,
       name: 'Cropped marrom',
-      img: 'img/camiseta3.jpg',
+      img: 'img/camiseta3.jpg.png',
       price: 17.45,
       sizes: ['dry', 'malha', 'algodão'],
       description: 'Blusa Básica regata marrom',
@@ -26,7 +26,7 @@ let modeloJson = [
     {
       id: 4,
       name: 'T-shirt Brooklyn  Marrom',
-      img: 'img/camiseta4.jpg',
+      img: 'img/camiseta4.jpg.png',
       price: 19.77,
       sizes: ['algodão', 'malha', 'dry'],
       description: 'Blusa Básica Manga Curta  ',
@@ -34,7 +34,7 @@ let modeloJson = [
     {
       id: 5,
       name: 'Croppd unity simples sexy regata',
-      img: 'img/camiseta5.jpg',
+      img: 'img/camiseta5.jpg.png',
       price: 21.43,
       sizes: ['malha', 'algodão', 'dry'],
       description: 'Blusa Básica regata preta',
@@ -42,7 +42,7 @@ let modeloJson = [
     {
       id: 6,
       name: 'T-shirt Brooklyn verde',
-      img: 'img/camiseta6.jpg',
+      img: 'img/camiseta6.jpg.png',
       price: 18.55,
       sizes: ['malha', 'dry', 'algodão'],
       description: 'Blusa Básica Manga Curta',
@@ -50,7 +50,7 @@ let modeloJson = [
     {
       id: 7,
       name: 'Camiseta Los angeles Lakers',
-      img: 'img/camiseta7.jpg',
+      img: 'img/camiseta7.jpg.png',
       price: 22.36,
       sizes: ['malha', 'dry', 'dry'],
       description: 'Blusa Básica Manga Curta',

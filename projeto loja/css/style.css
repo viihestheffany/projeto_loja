@@ -1,14 +1,21 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: #eee;
+  background-color: #b2dfee;
   font-family: "Hepta Slab", Helvetica, Arial;
   font-size: 15px;
   display: flex;
   margin: 0;
   min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
 }
 
 header {
@@ -37,4 +44,60 @@ header {
   max-width: 250px;
   font-family: "Hepta Slab", Helvetica, Arial;
   margin: 0 auto 50px auto;
+}
+
+.modelo-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.modelo-item-img {
+  width: 200px;
+  height: 200px;
+  background-color: #b2dfee;
+}
+
+.modelo-item-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+  box-shadow: 0px 10px 50px rgb(97, 97, 97);
+}
+
+.modelo-item-add {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #cae1ff;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+.modelo-item a:hover .modelo-item-add {
+  background-color: #bfefff;
+}
+
+.modelo-item-price {
+  font-size: 15px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.modelo-item-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 10px;
+}
+
+.modelo-item-desc {
+  font-size: 13px;
+  color: #555;
+  margin-top: 10px;
 }

@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #b2dfee;
+  background-color: #b0e2ff;
   font-family: "Hepta Slab", Helvetica, Arial;
   font-size: 15px;
   display: flex;
@@ -18,16 +18,38 @@ main {
   padding: 20px;
 }
 
+h1 {
+  font-family: "Hepta Slap", Helvetica, Arial;
+  margin-bottom: 40px;
+}
+
 header {
   display: none;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 50px;
+  position: fixed;
+  background-color: #4db6f7;
+  align-items: center;
 }
 
-.cart-area {
-  display: none;
+.menu-openner {
+  margin-right: 15px;
+  font-size: 26px;
+  padding: 5px 20px;
+  border-radius: 5px;
 }
 
-.modeLoWindowArea {
+.menu-openner span {
+  margin-right: 10px;
+}
+
+.menu-close {
+  width: 32px;
+  height: 32px;
   display: none;
+  font-size: 30px;
 }
 
 .models {
@@ -100,4 +122,62 @@ header {
   font-size: 13px;
   color: #555;
   margin-top: 10px;
+}
+
+aside {
+  background-color: #9ccbe6;
+  width: 0vw;
+  overflow-x: hidden;
+  font-size: "Hepta Slab", Helvetica, Arial;
+}
+
+.cart-area {
+  padding: 20px;
+}
+
+.modeLoWindowArea {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+/*Media Queries*/
+@media (max-width: 1300px) {
+  .modelo-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 840px) {
+  header {
+    display: flex;
+  }
+
+  main {
+    padding-top: 80px;
+  }
+
+  aside {
+    width: auto;
+    position: fixed;
+    left: 100vw;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .cart-area {
+    width: 100vw;
+  }
+
+  .menu-close {
+    display: block;
+  }
 }

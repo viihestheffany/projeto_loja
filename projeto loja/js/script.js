@@ -5,6 +5,8 @@ const cs = (el) => document.querySelectorAll(el);
 modeloJson.map((item, index) => {
     let modeloItem = c('.models .modelo-item').cloneNode(true);
 
+    modeloItem.setAttribute('data-key', index);
+
     modeloItem.querySelector('.modelo-item-img img').src = item.img;
     modeloItem.querySelector('.modelo-item-name').innerHTML = item.name;
     modeloItem.querySelector('.modelo-item-desc').innerHTML = item.description;
@@ -13,7 +15,23 @@ modeloJson.map((item, index) => {
     modeloItem.querySelector('a').addEventListener('click', (e) => {
         e.preventDeFault();
 
-        c('.modeLoWindowArea').style.display = 'flex';
+        let key =  e.target.closest('.modelo-item').getAttribute('data-key');
+
+        c('.modeloBig').src = modeloJson[key].img;
+        c('modeloInfo h1').innerHTML = modeloJson[key].name;
+        c('.modeloInfo-desc'),innerHTML = modeloJson[key].description;
+        c('.modeloInfo-actualPrice').innerHTML = `R$ ${modelojson[key].price.toFixed(2)}`;
+
+        cs('.modeloInfo-size').forEach((size, sizeIndex) => {
+            size.querySelector('span').innerHTML = modeloJson[key].sizes[sizeIndex];
+        });
+
+        c('.modeloWindowArea').style.opacity = 0;
+        c('.modeloWindowArea').style.display = 'flex';
+
+        setTimeout(() =>{
+            c('.modeloWindowArea').style.opacity = 1;
+        },200);
     });
 
     c('.modelo-area').append(modeloItem);
